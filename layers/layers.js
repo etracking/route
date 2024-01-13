@@ -12,77 +12,113 @@ var wms_layers = [];
                 url: 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'
             })
         });
-var format_UTM_1 = new ol.format.GeoJSON();
-var features_UTM_1 = format_UTM_1.readFeatures(json_UTM_1, 
+
+        var lyr_Geodata_1 = new ol.layer.Tile({
+            'title': 'Geodata',
+            'type': 'base',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+    attributions: ' ',
+                url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/WGS84/{z}/{x}/{y}.png'
+            })
+        });
+
+        var lyr_Geodata_Label_2 = new ol.layer.Tile({
+            'title': 'Geodata_Label',
+            'type': 'base',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+    attributions: ' ',
+                url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/WGS84/{z}/{x}/{y}.png'
+            })
+        });
+var format_UTM_3 = new ol.format.GeoJSON();
+var features_UTM_3 = format_UTM_3.readFeatures(json_UTM_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_UTM_1 = new ol.source.Vector({
+var jsonSource_UTM_3 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_UTM_1.addFeatures(features_UTM_1);
-var lyr_UTM_1 = new ol.layer.Vector({
+jsonSource_UTM_3.addFeatures(features_UTM_3);
+var lyr_UTM_3 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_UTM_1, 
-                style: style_UTM_1,
+                source:jsonSource_UTM_3, 
+                style: style_UTM_3,
                 interactive: true,
-                title: '<img src="styles/legend/UTM_1.png" /> UTM'
-            });
-var format_Route_Q21_22_2 = new ol.format.GeoJSON();
-var features_Route_Q21_22_2 = format_Route_Q21_22_2.readFeatures(json_Route_Q21_22_2, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Route_Q21_22_2 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Route_Q21_22_2.addFeatures(features_Route_Q21_22_2);
-var lyr_Route_Q21_22_2 = new ol.layer.Vector({
-                declutter: true,
-                source:jsonSource_Route_Q21_22_2, 
-                style: style_Route_Q21_22_2,
-                interactive: true,
-                title: '<img src="styles/legend/Route_Q21_22_2.png" /> Route_Q21_22'
-            });
-var format__3 = new ol.format.GeoJSON();
-var features__3 = format__3.readFeatures(json__3, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource__3 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource__3.addFeatures(features__3);
-var lyr__3 = new ol.layer.Vector({
-                declutter: true,
-                source:jsonSource__3, 
-                style: style__3,
-                interactive: true,
-                title: '<img src="styles/legend/_3.png" /> 導師參考'
-            });
-var format_161732024_4 = new ol.format.GeoJSON();
-var features_161732024_4 = format_161732024_4.readFeatures(json_161732024_4, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_161732024_4 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_161732024_4.addFeatures(features_161732024_4);
-var lyr_161732024_4 = new ol.layer.Vector({
-                declutter: true,
-                source:jsonSource_161732024_4, 
-                style: style_161732024_4,
-                interactive: true,
-                title: '<img src="styles/legend/161732024_4.png" />  旅程一（16-17/3/2024）（學員）'
+                title: '<img src="styles/legend/UTM_3.png" /> UTM'
             });
 
-lyr_OSMStandard_0.setVisible(true);lyr_UTM_1.setVisible(true);lyr_Route_Q21_22_2.setVisible(true);lyr__3.setVisible(true);lyr_161732024_4.setVisible(true);
-var layersList = [lyr_OSMStandard_0,lyr_UTM_1,lyr_Route_Q21_22_2,lyr__3,lyr_161732024_4];
-lyr_UTM_1.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'Zone': 'Zone', 'GR': 'GR', 'layer': 'layer', 'path': 'path', });
-lyr_Route_Q21_22_2.set('fieldAliases', {'fid': 'fid', });
-lyr__3.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
-lyr_161732024_4.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
-lyr_UTM_1.set('fieldImages', {'fid': 'TextEdit', 'id': 'TextEdit', 'left': 'TextEdit', 'top': 'TextEdit', 'right': 'TextEdit', 'bottom': 'TextEdit', 'Zone': 'TextEdit', 'GR': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
-lyr_Route_Q21_22_2.set('fieldImages', {'fid': 'Hidden', });
-lyr__3.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
-lyr_161732024_4.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
-lyr_UTM_1.set('fieldLabels', {'fid': 'no label', 'id': 'no label', 'left': 'no label', 'top': 'no label', 'right': 'no label', 'bottom': 'no label', 'Zone': 'no label', 'GR': 'no label', 'layer': 'no label', 'path': 'no label', });
-lyr_Route_Q21_22_2.set('fieldLabels', {});
-lyr__3.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'no label', });
-lyr_161732024_4.set('fieldLabels', {'CP': 'inline label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
-lyr_161732024_4.on('precompose', function(evt) {
+        var lyr_ib20000_4 = new ol.layer.Tile({
+            'title': 'ib20000',
+            'type': 'base',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+    attributions: ' ',
+                url: 'https://istw.hkirscout.org.hk/2023-06-QPNG/{z}/{x}/{y}.png'
+            })
+        });
+var format_Route_Q21_22_5 = new ol.format.GeoJSON();
+var features_Route_Q21_22_5 = format_Route_Q21_22_5.readFeatures(json_Route_Q21_22_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Route_Q21_22_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Route_Q21_22_5.addFeatures(features_Route_Q21_22_5);
+var lyr_Route_Q21_22_5 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_Route_Q21_22_5, 
+                style: style_Route_Q21_22_5,
+                interactive: false,
+                title: '<img src="styles/legend/Route_Q21_22_5.png" /> Route_Q21_22'
+            });
+var format__6 = new ol.format.GeoJSON();
+var features__6 = format__6.readFeatures(json__6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource__6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource__6.addFeatures(features__6);
+var lyr__6 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource__6, 
+                style: style__6,
+                interactive: true,
+                title: '<img src="styles/legend/_6.png" /> 導師參考'
+            });
+var format_161732024_7 = new ol.format.GeoJSON();
+var features_161732024_7 = format_161732024_7.readFeatures(json_161732024_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_161732024_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_161732024_7.addFeatures(features_161732024_7);
+var lyr_161732024_7 = new ol.layer.Vector({
+                declutter: true,
+                source:jsonSource_161732024_7, 
+                style: style_161732024_7,
+                interactive: true,
+                title: '<img src="styles/legend/161732024_7.png" />  旅程一（16-17/3/2024）（學員）'
+            });
+
+lyr_OSMStandard_0.setVisible(true);lyr_Geodata_1.setVisible(true);lyr_Geodata_Label_2.setVisible(true);lyr_UTM_3.setVisible(true);lyr_ib20000_4.setVisible(true);lyr_Route_Q21_22_5.setVisible(true);lyr__6.setVisible(true);lyr_161732024_7.setVisible(true);
+var layersList = [lyr_OSMStandard_0,lyr_Geodata_1,lyr_Geodata_Label_2,lyr_UTM_3,lyr_ib20000_4,lyr_Route_Q21_22_5,lyr__6,lyr_161732024_7];
+lyr_UTM_3.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'Zone': 'Zone', 'GR': 'GR', 'layer': 'layer', 'path': 'path', });
+lyr_Route_Q21_22_5.set('fieldAliases', {'fid': 'fid', });
+lyr__6.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
+lyr_161732024_7.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
+lyr_UTM_3.set('fieldImages', {'fid': 'TextEdit', 'id': 'TextEdit', 'left': 'TextEdit', 'top': 'TextEdit', 'right': 'TextEdit', 'bottom': 'TextEdit', 'Zone': 'TextEdit', 'GR': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
+lyr_Route_Q21_22_5.set('fieldImages', {'fid': 'Hidden', });
+lyr__6.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
+lyr_161732024_7.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
+lyr_UTM_3.set('fieldLabels', {'fid': 'no label', 'id': 'no label', 'left': 'no label', 'top': 'no label', 'right': 'no label', 'bottom': 'no label', 'Zone': 'no label', 'GR': 'no label', 'layer': 'no label', 'path': 'no label', });
+lyr_Route_Q21_22_5.set('fieldLabels', {});
+lyr__6.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'no label', });
+lyr_161732024_7.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'no label', });
+lyr_161732024_7.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'multiply';
 });
