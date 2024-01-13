@@ -21,7 +21,7 @@ var style_Route_Q21_22_5 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,251,0,0.314)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,251,0,0.297)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
