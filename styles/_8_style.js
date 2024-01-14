@@ -9,7 +9,7 @@ var style__8 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "13.0px \'Helvetica\', sans-serif";
+    var labelFont = "10.4px \'Helvetica\', sans-serif";
     var labelFill = "#1768ff";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -21,7 +21,7 @@ var style__8 = function(feature, resolution){
         labelText = String(feature.get("CP"));
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 12.0 + size,
+        image: new ol.style.Circle({radius: 10.0 + size,
             stroke: new ol.style.Stroke({color: 'rgba(23,104,255,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 2}), fill: new ol.style.Fill({color: 'rgba(238,23,234,0.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
