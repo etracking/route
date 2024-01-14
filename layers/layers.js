@@ -102,35 +102,35 @@ var lyr_131432024_7 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/131432024_7.png" /> 旅程一（13-14/3/2024）'
             });
-var format__8 = new ol.format.GeoJSON();
-var features__8 = format__8.readFeatures(json__8, 
+var format_StaffReference_8 = new ol.format.GeoJSON();
+var features_StaffReference_8 = format_StaffReference_8.readFeatures(json_StaffReference_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource__8 = new ol.source.Vector({
+var jsonSource_StaffReference_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource__8.addFeatures(features__8);
-var lyr__8 = new ol.layer.Vector({
+jsonSource_StaffReference_8.addFeatures(features_StaffReference_8);
+var lyr_StaffReference_8 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource__8, 
-                style: style__8,
+                source:jsonSource_StaffReference_8, 
+                style: style_StaffReference_8,
                 interactive: true,
-                title: '<img src="styles/legend/_8.png" /> 職員參考'
+                title: '<img src="styles/legend/StaffReference_8.png" /> Staff Reference'
             });
 
-lyr_Geodata_Imagery_0.setVisible(true);lyr_Geodata_1.setVisible(true);lyr_Geodata_Label_2.setVisible(true);lyr_OSMStandard_3.setVisible(true);lyr_UTM_4.setVisible(true);lyr_ib20000_5.setVisible(true);lyr_Route_Q21_22_6.setVisible(true);lyr_131432024_7.setVisible(true);lyr__8.setVisible(true);
-var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_Geodata_Label_2,lyr_OSMStandard_3,lyr_UTM_4,lyr_ib20000_5,lyr_Route_Q21_22_6,lyr_131432024_7,lyr__8];
+lyr_Geodata_Imagery_0.setVisible(true);lyr_Geodata_1.setVisible(true);lyr_Geodata_Label_2.setVisible(true);lyr_OSMStandard_3.setVisible(true);lyr_UTM_4.setVisible(true);lyr_ib20000_5.setVisible(true);lyr_Route_Q21_22_6.setVisible(true);lyr_131432024_7.setVisible(true);lyr_StaffReference_8.setVisible(true);
+var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_Geodata_Label_2,lyr_OSMStandard_3,lyr_UTM_4,lyr_ib20000_5,lyr_Route_Q21_22_6,lyr_131432024_7,lyr_StaffReference_8];
 lyr_UTM_4.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'Zone': 'Zone', 'GR': 'GR', 'layer': 'layer', 'path': 'path', });
 lyr_Route_Q21_22_6.set('fieldAliases', {'fid': 'fid', });
 lyr_131432024_7.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
-lyr__8.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
+lyr_StaffReference_8.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
 lyr_UTM_4.set('fieldImages', {'fid': 'TextEdit', 'id': 'TextEdit', 'left': 'TextEdit', 'top': 'TextEdit', 'right': 'TextEdit', 'bottom': 'TextEdit', 'Zone': 'TextEdit', 'GR': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
 lyr_Route_Q21_22_6.set('fieldImages', {'fid': '', });
 lyr_131432024_7.set('fieldImages', {'fid': 'TextEdit', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': '', 'Remark': '', 'GR': '', });
-lyr__8.set('fieldImages', {'fid': 'TextEdit', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': '', 'Remark': '', 'GR': '', });
+lyr_StaffReference_8.set('fieldImages', {'fid': 'TextEdit', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': '', 'Remark': '', 'GR': '', });
 lyr_UTM_4.set('fieldLabels', {'fid': 'no label', 'id': 'no label', 'left': 'no label', 'top': 'no label', 'right': 'no label', 'bottom': 'no label', 'Zone': 'no label', 'GR': 'no label', 'layer': 'no label', 'path': 'no label', });
 lyr_Route_Q21_22_6.set('fieldLabels', {'fid': 'no label', });
 lyr_131432024_7.set('fieldLabels', {'fid': 'no label', 'CP': 'no label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Order': 'no label', 'Remark': 'no label', 'GR': 'no label', });
-lyr__8.set('fieldLabels', {'fid': 'no label', 'CP': 'no label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Order': 'no label', 'Remark': 'no label', 'GR': 'no label', });
-lyr__8.on('precompose', function(evt) {
+lyr_StaffReference_8.set('fieldLabels', {'fid': 'no label', 'CP': 'no label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Order': 'no label', 'Remark': 'no label', 'GR': 'no label', });
+lyr_StaffReference_8.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'multiply';
 });
