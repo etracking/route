@@ -125,12 +125,12 @@ lyr_131432024_7.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer',
 lyr_StaffReference_8.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'GR': 'GR', });
 lyr_UTM_4.set('fieldImages', {'fid': 'TextEdit', 'id': 'TextEdit', 'left': 'TextEdit', 'top': 'TextEdit', 'right': 'TextEdit', 'bottom': 'TextEdit', 'Zone': 'TextEdit', 'GR': 'TextEdit', 'layer': 'TextEdit', 'path': 'TextEdit', });
 lyr_Route_Q21_22_6.set('fieldImages', {'fid': '', });
-lyr_131432024_7.set('fieldImages', {'fid': 'TextEdit', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': '', 'Remark': '', 'GR': '', });
-lyr_StaffReference_8.set('fieldImages', {'fid': 'TextEdit', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': '', 'Remark': '', 'GR': '', });
+lyr_131432024_7.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
+lyr_StaffReference_8.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'TextEdit', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
 lyr_UTM_4.set('fieldLabels', {'fid': 'no label', 'id': 'no label', 'left': 'no label', 'top': 'no label', 'right': 'no label', 'bottom': 'no label', 'Zone': 'no label', 'GR': 'no label', 'layer': 'no label', 'path': 'no label', });
 lyr_Route_Q21_22_6.set('fieldLabels', {'fid': 'no label', });
-lyr_131432024_7.set('fieldLabels', {'fid': 'no label', 'CP': 'no label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Order': 'no label', 'Remark': 'no label', 'GR': 'no label', });
-lyr_StaffReference_8.set('fieldLabels', {'fid': 'no label', 'CP': 'no label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Order': 'no label', 'Remark': 'no label', 'GR': 'no label', });
+lyr_131432024_7.set('fieldLabels', {'CP': 'inline label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
+lyr_StaffReference_8.set('fieldLabels', {'CP': 'inline label', 'Layer': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
 lyr_StaffReference_8.on('precompose', function(evt) {
-    evt.context.globalCompositeOperation = 'multiply';
+    evt.context.globalCompositeOperation = 'normal';
 });
