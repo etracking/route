@@ -190,7 +190,7 @@ lyr_422024_8.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hi
 lyr_202142024_9.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
 lyr_131432024_10.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
 lyr_StaffReference_11.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'GR': 'TextEdit', });
-lyr_ForStaffOnly_12.set('fieldImages', {'fid': 'Hidden', 'Name': 'Hidden', });
+lyr_ForStaffOnly_12.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', });
 lyr_UTM_4.set('fieldLabels', {});
 lyr_SuggestedRoute_6.set('fieldLabels', {'fid': 'no label', });
 lyr_1822024_7.set('fieldLabels', {'CP': 'inline label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
@@ -198,7 +198,7 @@ lyr_422024_8.set('fieldLabels', {'CP': 'inline label', 'Name': 'no label', 'Feat
 lyr_202142024_9.set('fieldLabels', {'CP': 'inline label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
 lyr_131432024_10.set('fieldLabels', {'CP': 'inline label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
 lyr_StaffReference_11.set('fieldLabels', {'CP': 'inline label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'GR': 'inline label', });
-lyr_ForStaffOnly_12.set('fieldLabels', {});
+lyr_ForStaffOnly_12.set('fieldLabels', {'fid': 'no label', 'Name': 'no label', });
 lyr_ForStaffOnly_12.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

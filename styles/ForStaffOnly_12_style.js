@@ -17,8 +17,8 @@ var style_ForStaffOnly_12 = function(feature, resolution){
     var offsetX = 8;
     var offsetY = 3;
     var placement = 'point';
-    if (feature.get("q2wHide_Name") !== null) {
-        labelText = String(feature.get("q2wHide_Name"));
+    if (feature.get("Name") !== null) {
+        labelText = String(feature.get("Name"));
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 30.0 + size,
