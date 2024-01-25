@@ -100,7 +100,7 @@ var lyr_1822024_7 = new ol.layer.Vector({
                 source:jsonSource_1822024_7, 
                 style: style_1822024_7,
                 interactive: true,
-                title: '<img src="styles/legend/1822024_7.png" /> 地圖閱讀實習二（18/2/2024）'
+                title: '<img src="styles/legend/1822024_7.png" /> 地圖閱讀實習二(寶馬山)（18/2/2024）'
             });
 var format_422024_8 = new ol.format.GeoJSON();
 var features_422024_8 = format_422024_8.readFeatures(json_422024_8, 
@@ -114,7 +114,7 @@ var lyr_422024_8 = new ol.layer.Vector({
                 source:jsonSource_422024_8, 
                 style: style_422024_8,
                 interactive: true,
-                title: '<img src="styles/legend/422024_8.png" /> 地圖閱讀實習一（4/2/2024）'
+                title: '<img src="styles/legend/422024_8.png" /> 地圖閱讀實習一(掌牛山)（4/2/2024）'
             });
 var format_202142024_9 = new ol.format.GeoJSON();
 var features_202142024_9 = format_202142024_9.readFeatures(json_202142024_9, 
@@ -128,7 +128,7 @@ var lyr_202142024_9 = new ol.layer.Vector({
                 source:jsonSource_202142024_9, 
                 style: style_202142024_9,
                 interactive: true,
-                title: '<img src="styles/legend/202142024_9.png" /> 旅程二（20-21/4/2024）'
+                title: '<img src="styles/legend/202142024_9.png" /> 旅程二(屯門聯光荃灣)（20-21/4/2024）'
             });
 var format_131432024_10 = new ol.format.GeoJSON();
 var features_131432024_10 = format_131432024_10.readFeatures(json_131432024_10, 
@@ -142,7 +142,7 @@ var lyr_131432024_10 = new ol.layer.Vector({
                 source:jsonSource_131432024_10, 
                 style: style_131432024_10,
                 interactive: true,
-                title: '<img src="styles/legend/131432024_10.png" /> 旅程一（13-14/3/2024）'
+                title: '<img src="styles/legend/131432024_10.png" /> 旅程一(黃泥頭白沙灣黃泥頭)（13-14/3/2024）'
             });
 var format_StaffReference_11 = new ol.format.GeoJSON();
 var features_StaffReference_11 = format_StaffReference_11.readFeatures(json_StaffReference_11, 
