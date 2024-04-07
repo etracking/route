@@ -9,8 +9,8 @@ var style_StudentCP_8 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "15.600000000000001px \'Helvetica\', sans-serif";
-    var labelFill = "#289e17";
+    var labelFont = "32.5px \'Helvetica\', sans-serif";
+    var labelFill = "#ee17ea";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
@@ -21,8 +21,8 @@ var style_StudentCP_8 = function(feature, resolution){
         labelText = String(feature.get("CP"));
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 10.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(40,158,23,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(238,23,234,0.0)'})}),
+        image: new ol.style.Circle({radius: 16.0 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(238,23,234,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(238,23,234,0.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
