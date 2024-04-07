@@ -22,7 +22,7 @@ var style_131432024_13 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 16.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(238,23,234,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3}), fill: new ol.style.Fill({color: 'rgba(238,23,234,0.0)'})}),
+            stroke: new ol.style.Stroke({color: 'rgba(238,23,234,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 3.04}), fill: new ol.style.Fill({color: 'rgba(238,23,234,0.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
