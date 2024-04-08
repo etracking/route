@@ -90,195 +90,213 @@ var lyr_SuggestedRoute_6 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/SuggestedRoute_6.png" /> Suggested Route'
             });
-var format_T1_7 = new ol.format.GeoJSON();
-var features_T1_7 = format_T1_7.readFeatures(json_T1_7, 
+var format_T4_7 = new ol.format.GeoJSON();
+var features_T4_7 = format_T4_7.readFeatures(json_T4_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_T1_7 = new ol.source.Vector({
+var jsonSource_T4_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_T1_7.addFeatures(features_T1_7);
-var lyr_T1_7 = new ol.layer.Vector({
+jsonSource_T4_7.addFeatures(features_T4_7);
+var lyr_T4_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_T1_7, 
-                style: style_T1_7,
+                source:jsonSource_T4_7, 
+                style: style_T4_7,
+                popuplayertitle: "T4",
+                interactive: true,
+                title: '<img src="styles/legend/T4_7.png" /> T4'
+            });
+var format_T1_8 = new ol.format.GeoJSON();
+var features_T1_8 = format_T1_8.readFeatures(json_T1_8, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_T1_8 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_T1_8.addFeatures(features_T1_8);
+var lyr_T1_8 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_T1_8, 
+                style: style_T1_8,
                 popuplayertitle: "T1",
                 interactive: true,
-                title: '<img src="styles/legend/T1_7.png" /> T1'
+                title: '<img src="styles/legend/T1_8.png" /> T1'
             });
-var format_StudentCP_8 = new ol.format.GeoJSON();
-var features_StudentCP_8 = format_StudentCP_8.readFeatures(json_StudentCP_8, 
+var format_StudentCP_9 = new ol.format.GeoJSON();
+var features_StudentCP_9 = format_StudentCP_9.readFeatures(json_StudentCP_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_StudentCP_8 = new ol.source.Vector({
+var jsonSource_StudentCP_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_StudentCP_8.addFeatures(features_StudentCP_8);
-var lyr_StudentCP_8 = new ol.layer.Vector({
+jsonSource_StudentCP_9.addFeatures(features_StudentCP_9);
+var lyr_StudentCP_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_StudentCP_8, 
-                style: style_StudentCP_8,
+                source:jsonSource_StudentCP_9, 
+                style: style_StudentCP_9,
                 popuplayertitle: "Student CP",
                 interactive: true,
-                title: '<img src="styles/legend/StudentCP_8.png" /> Student CP'
+                title: '<img src="styles/legend/StudentCP_9.png" /> Student CP'
             });
-var format_1032024_9 = new ol.format.GeoJSON();
-var features_1032024_9 = format_1032024_9.readFeatures(json_1032024_9, 
+var format_1032024_10 = new ol.format.GeoJSON();
+var features_1032024_10 = format_1032024_10.readFeatures(json_1032024_10, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_1032024_9 = new ol.source.Vector({
+var jsonSource_1032024_10 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_1032024_9.addFeatures(features_1032024_9);
-var lyr_1032024_9 = new ol.layer.Vector({
+jsonSource_1032024_10.addFeatures(features_1032024_10);
+var lyr_1032024_10 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_1032024_9, 
-                style: style_1032024_9,
+                source:jsonSource_1032024_10, 
+                style: style_1032024_10,
                 popuplayertitle: "地圖閱讀考驗日(集合及解散點)（10/3/2024）",
                 interactive: true,
-                title: '<img src="styles/legend/1032024_9.png" /> 地圖閱讀考驗日(集合及解散點)（10/3/2024）'
+                title: '<img src="styles/legend/1032024_10.png" /> 地圖閱讀考驗日(集合及解散點)（10/3/2024）'
             });
-var format_932024_10 = new ol.format.GeoJSON();
-var features_932024_10 = format_932024_10.readFeatures(json_932024_10, 
+var format_932024_11 = new ol.format.GeoJSON();
+var features_932024_11 = format_932024_11.readFeatures(json_932024_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_932024_10 = new ol.source.Vector({
+var jsonSource_932024_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_932024_10.addFeatures(features_932024_10);
-var lyr_932024_10 = new ol.layer.Vector({
+jsonSource_932024_11.addFeatures(features_932024_11);
+var lyr_932024_11 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_932024_10, 
-                style: style_932024_10,
+                source:jsonSource_932024_11, 
+                style: style_932024_11,
                 popuplayertitle: "夜行(蝌蚪坪-紅梅谷)（9/3/2024）",
                 interactive: true,
-                title: '<img src="styles/legend/932024_10.png" /> 夜行(蝌蚪坪-紅梅谷)（9/3/2024）'
+                title: '<img src="styles/legend/932024_11.png" /> 夜行(蝌蚪坪-紅梅谷)（9/3/2024）'
             });
-var format_1822024_11 = new ol.format.GeoJSON();
-var features_1822024_11 = format_1822024_11.readFeatures(json_1822024_11, 
+var format_1822024_12 = new ol.format.GeoJSON();
+var features_1822024_12 = format_1822024_12.readFeatures(json_1822024_12, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_1822024_11 = new ol.source.Vector({
+var jsonSource_1822024_12 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_1822024_11.addFeatures(features_1822024_11);
-var lyr_1822024_11 = new ol.layer.Vector({
+jsonSource_1822024_12.addFeatures(features_1822024_12);
+var lyr_1822024_12 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_1822024_11, 
-                style: style_1822024_11,
+                source:jsonSource_1822024_12, 
+                style: style_1822024_12,
                 popuplayertitle: "地圖閱讀實習二(寶馬山)（18/2/2024）",
                 interactive: true,
-                title: '<img src="styles/legend/1822024_11.png" /> 地圖閱讀實習二(寶馬山)（18/2/2024）'
+                title: '<img src="styles/legend/1822024_12.png" /> 地圖閱讀實習二(寶馬山)（18/2/2024）'
             });
-var format_422024_12 = new ol.format.GeoJSON();
-var features_422024_12 = format_422024_12.readFeatures(json_422024_12, 
+var format_422024_13 = new ol.format.GeoJSON();
+var features_422024_13 = format_422024_13.readFeatures(json_422024_13, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_422024_12 = new ol.source.Vector({
+var jsonSource_422024_13 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_422024_12.addFeatures(features_422024_12);
-var lyr_422024_12 = new ol.layer.Vector({
+jsonSource_422024_13.addFeatures(features_422024_13);
+var lyr_422024_13 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_422024_12, 
-                style: style_422024_12,
+                source:jsonSource_422024_13, 
+                style: style_422024_13,
                 popuplayertitle: "地圖閱讀實習一(掌牛山)（4/2/2024）",
                 interactive: true,
-                title: '<img src="styles/legend/422024_12.png" /> 地圖閱讀實習一(掌牛山)（4/2/2024）'
+                title: '<img src="styles/legend/422024_13.png" /> 地圖閱讀實習一(掌牛山)（4/2/2024）'
             });
-var format_202142024_13 = new ol.format.GeoJSON();
-var features_202142024_13 = format_202142024_13.readFeatures(json_202142024_13, 
+var format_202142024_14 = new ol.format.GeoJSON();
+var features_202142024_14 = format_202142024_14.readFeatures(json_202142024_14, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_202142024_13 = new ol.source.Vector({
+var jsonSource_202142024_14 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_202142024_13.addFeatures(features_202142024_13);
-var lyr_202142024_13 = new ol.layer.Vector({
+jsonSource_202142024_14.addFeatures(features_202142024_14);
+var lyr_202142024_14 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_202142024_13, 
-                style: style_202142024_13,
+                source:jsonSource_202142024_14, 
+                style: style_202142024_14,
                 popuplayertitle: "旅程二(屯門聯光荃灣)（20-21/4/2024）",
                 interactive: true,
-                title: '<img src="styles/legend/202142024_13.png" /> 旅程二(屯門聯光荃灣)（20-21/4/2024）'
+                title: '<img src="styles/legend/202142024_14.png" /> 旅程二(屯門聯光荃灣)（20-21/4/2024）'
             });
-var format_131432024_14 = new ol.format.GeoJSON();
-var features_131432024_14 = format_131432024_14.readFeatures(json_131432024_14, 
+var format_131432024_15 = new ol.format.GeoJSON();
+var features_131432024_15 = format_131432024_15.readFeatures(json_131432024_15, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_131432024_14 = new ol.source.Vector({
+var jsonSource_131432024_15 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_131432024_14.addFeatures(features_131432024_14);
-var lyr_131432024_14 = new ol.layer.Vector({
+jsonSource_131432024_15.addFeatures(features_131432024_15);
+var lyr_131432024_15 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_131432024_14, 
-                style: style_131432024_14,
+                source:jsonSource_131432024_15, 
+                style: style_131432024_15,
                 popuplayertitle: "旅程一(黃泥頭白沙灣黃泥頭)（13-14/3/2024）",
                 interactive: true,
-                title: '<img src="styles/legend/131432024_14.png" /> 旅程一(黃泥頭白沙灣黃泥頭)（13-14/3/2024）'
+                title: '<img src="styles/legend/131432024_15.png" /> 旅程一(黃泥頭白沙灣黃泥頭)（13-14/3/2024）'
             });
-var format_StaffReference_15 = new ol.format.GeoJSON();
-var features_StaffReference_15 = format_StaffReference_15.readFeatures(json_StaffReference_15, 
+var format_StaffReference_16 = new ol.format.GeoJSON();
+var features_StaffReference_16 = format_StaffReference_16.readFeatures(json_StaffReference_16, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_StaffReference_15 = new ol.source.Vector({
+var jsonSource_StaffReference_16 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_StaffReference_15.addFeatures(features_StaffReference_15);
-var lyr_StaffReference_15 = new ol.layer.Vector({
+jsonSource_StaffReference_16.addFeatures(features_StaffReference_16);
+var lyr_StaffReference_16 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_StaffReference_15, 
-                style: style_StaffReference_15,
+                source:jsonSource_StaffReference_16, 
+                style: style_StaffReference_16,
                 popuplayertitle: "Staff Reference",
                 interactive: true,
-                title: '<img src="styles/legend/StaffReference_15.png" /> Staff Reference'
+                title: '<img src="styles/legend/StaffReference_16.png" /> Staff Reference'
             });
-var format_ForStaffOnly_16 = new ol.format.GeoJSON();
-var features_ForStaffOnly_16 = format_ForStaffOnly_16.readFeatures(json_ForStaffOnly_16, 
+var format_ForStaffOnly_17 = new ol.format.GeoJSON();
+var features_ForStaffOnly_17 = format_ForStaffOnly_17.readFeatures(json_ForStaffOnly_17, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_ForStaffOnly_16 = new ol.source.Vector({
+var jsonSource_ForStaffOnly_17 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ForStaffOnly_16.addFeatures(features_ForStaffOnly_16);
-var lyr_ForStaffOnly_16 = new ol.layer.Vector({
+jsonSource_ForStaffOnly_17.addFeatures(features_ForStaffOnly_17);
+var lyr_ForStaffOnly_17 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_ForStaffOnly_16, 
-                style: style_ForStaffOnly_16,
+                source:jsonSource_ForStaffOnly_17, 
+                style: style_ForStaffOnly_17,
                 popuplayertitle: "For Staff Only",
                 interactive: true,
-                title: '<img src="styles/legend/ForStaffOnly_16.png" /> For Staff Only'
+                title: '<img src="styles/legend/ForStaffOnly_17.png" /> For Staff Only'
             });
 
-lyr_Geodata_Imagery_0.setVisible(true);lyr_Geodata_1.setVisible(true);lyr_Geodata_Label_2.setVisible(true);lyr_OSMStandard_3.setVisible(true);lyr_UTM_4.setVisible(true);lyr_ib20000_5.setVisible(true);lyr_SuggestedRoute_6.setVisible(true);lyr_T1_7.setVisible(true);lyr_StudentCP_8.setVisible(true);lyr_1032024_9.setVisible(true);lyr_932024_10.setVisible(true);lyr_1822024_11.setVisible(true);lyr_422024_12.setVisible(true);lyr_202142024_13.setVisible(true);lyr_131432024_14.setVisible(true);lyr_StaffReference_15.setVisible(true);lyr_ForStaffOnly_16.setVisible(true);
-var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_Geodata_Label_2,lyr_OSMStandard_3,lyr_UTM_4,lyr_ib20000_5,lyr_SuggestedRoute_6,lyr_T1_7,lyr_StudentCP_8,lyr_1032024_9,lyr_932024_10,lyr_1822024_11,lyr_422024_12,lyr_202142024_13,lyr_131432024_14,lyr_StaffReference_15,lyr_ForStaffOnly_16];
+lyr_Geodata_Imagery_0.setVisible(true);lyr_Geodata_1.setVisible(true);lyr_Geodata_Label_2.setVisible(true);lyr_OSMStandard_3.setVisible(true);lyr_UTM_4.setVisible(true);lyr_ib20000_5.setVisible(true);lyr_SuggestedRoute_6.setVisible(true);lyr_T4_7.setVisible(true);lyr_T1_8.setVisible(true);lyr_StudentCP_9.setVisible(true);lyr_1032024_10.setVisible(true);lyr_932024_11.setVisible(true);lyr_1822024_12.setVisible(true);lyr_422024_13.setVisible(true);lyr_202142024_14.setVisible(true);lyr_131432024_15.setVisible(true);lyr_StaffReference_16.setVisible(true);lyr_ForStaffOnly_17.setVisible(true);
+var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_Geodata_Label_2,lyr_OSMStandard_3,lyr_UTM_4,lyr_ib20000_5,lyr_SuggestedRoute_6,lyr_T4_7,lyr_T1_8,lyr_StudentCP_9,lyr_1032024_10,lyr_932024_11,lyr_1822024_12,lyr_422024_13,lyr_202142024_14,lyr_131432024_15,lyr_StaffReference_16,lyr_ForStaffOnly_17];
 lyr_UTM_4.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'Zone': 'Zone', 'GR': 'GR', 'layer': 'layer', 'path': 'path', });
 lyr_SuggestedRoute_6.set('fieldAliases', {'fid': 'fid', });
-lyr_T1_7.set('fieldAliases', {'fid': 'fid', 'Team': 'Team', });
-lyr_StudentCP_8.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_1032024_9.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_932024_10.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_1822024_11.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_422024_12.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_202142024_13.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_131432024_14.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_StaffReference_15.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
-lyr_ForStaffOnly_16.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', });
+lyr_T4_7.set('fieldAliases', {'fid': 'fid', 'Team': 'Team', });
+lyr_T1_8.set('fieldAliases', {'fid': 'fid', 'Team': 'Team', });
+lyr_StudentCP_9.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_1032024_10.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_932024_11.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_1822024_12.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_422024_13.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_202142024_14.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_131432024_15.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_StaffReference_16.set('fieldAliases', {'fid': 'fid', 'CP': 'CP', 'Layer': 'Layer', 'Name': 'Name', 'Feature': 'Feature', 'Order': 'Order', 'Remark': 'Remark', 'T1': 'T1', 'T2': 'T2', 'T3': 'T3', 'T4': 'T4', 'GR': 'GR', });
+lyr_ForStaffOnly_17.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', });
 lyr_UTM_4.set('fieldImages', {'fid': 'Hidden', 'id': 'Hidden', 'left': 'Hidden', 'top': 'Hidden', 'right': 'Hidden', 'bottom': 'Hidden', 'Zone': 'Hidden', 'GR': 'Hidden', 'layer': 'Hidden', 'path': 'Hidden', });
 lyr_SuggestedRoute_6.set('fieldImages', {'fid': '', });
-lyr_T1_7.set('fieldImages', {'fid': '', 'Team': '', });
-lyr_StudentCP_8.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_1032024_9.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_932024_10.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_1822024_11.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_422024_12.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_202142024_13.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_131432024_14.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_StaffReference_15.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
-lyr_ForStaffOnly_16.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', });
+lyr_T4_7.set('fieldImages', {'fid': '', 'Team': '', });
+lyr_T1_8.set('fieldImages', {'fid': '', 'Team': '', });
+lyr_StudentCP_9.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_1032024_10.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_932024_11.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_1822024_12.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_422024_13.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_202142024_14.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_131432024_15.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_StaffReference_16.set('fieldImages', {'fid': 'Hidden', 'CP': 'TextEdit', 'Layer': 'Hidden', 'Name': 'TextEdit', 'Feature': 'TextEdit', 'Order': 'Hidden', 'Remark': 'TextEdit', 'T1': '', 'T2': '', 'T3': '', 'T4': '', 'GR': 'TextEdit', });
+lyr_ForStaffOnly_17.set('fieldImages', {'fid': 'TextEdit', 'Name': 'TextEdit', });
 lyr_UTM_4.set('fieldLabels', {});
 lyr_SuggestedRoute_6.set('fieldLabels', {'fid': 'no label', });
-lyr_T1_7.set('fieldLabels', {'fid': 'no label', 'Team': 'no label', });
-lyr_StudentCP_8.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_1032024_9.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_932024_10.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_1822024_11.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_422024_12.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_202142024_13.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_131432024_14.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_StaffReference_15.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
-lyr_ForStaffOnly_16.set('fieldLabels', {'fid': 'no label', 'Name': 'no label', });
-lyr_ForStaffOnly_16.on('precompose', function(evt) {
+lyr_T4_7.set('fieldLabels', {'fid': 'no label', 'Team': 'no label', });
+lyr_T1_8.set('fieldLabels', {'fid': 'no label', 'Team': 'no label', });
+lyr_StudentCP_9.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_1032024_10.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_932024_11.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_1822024_12.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_422024_13.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_202142024_14.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_131432024_15.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_StaffReference_16.set('fieldLabels', {'CP': 'no label', 'Name': 'no label', 'Feature': 'no label', 'Remark': 'no label', 'T1': 'no label', 'T2': 'no label', 'T3': 'no label', 'T4': 'no label', 'GR': 'no label', });
+lyr_ForStaffOnly_17.set('fieldLabels', {'fid': 'no label', 'Name': 'no label', });
+lyr_ForStaffOnly_17.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
