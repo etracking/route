@@ -21,7 +21,7 @@ var style_T1_9 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,27,0,0.21)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 11.399999999999999}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,27,0,0.21)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 5.699999999999999}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
