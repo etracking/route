@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_T4_7 = function(feature, resolution){
+var style_T3_8 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,7 @@ var style_T4_7 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,0,255,0.21)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 11.399999999999999}),
+        stroke: new ol.style.Stroke({color: 'rgba(255,158,23,0.21)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 11.399999999999999}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
