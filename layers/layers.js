@@ -87,7 +87,7 @@ var lyr_SuggestedRoute_6 = new ol.layer.Vector({
                 source:jsonSource_SuggestedRoute_6, 
                 style: style_SuggestedRoute_6,
                 popuplayertitle: "Suggested Route",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/SuggestedRoute_6.png" /> Suggested Route'
             });
 var format_T4_7 = new ol.format.GeoJSON();
@@ -102,7 +102,7 @@ var lyr_T4_7 = new ol.layer.Vector({
                 source:jsonSource_T4_7, 
                 style: style_T4_7,
                 popuplayertitle: "T4",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/T4_7.png" /> T4'
             });
 var format_T3_8 = new ol.format.GeoJSON();
@@ -117,7 +117,7 @@ var lyr_T3_8 = new ol.layer.Vector({
                 source:jsonSource_T3_8, 
                 style: style_T3_8,
                 popuplayertitle: "T3",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/T3_8.png" /> T3'
             });
 var format_T2_9 = new ol.format.GeoJSON();
@@ -132,7 +132,7 @@ var lyr_T2_9 = new ol.layer.Vector({
                 source:jsonSource_T2_9, 
                 style: style_T2_9,
                 popuplayertitle: "T2",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/T2_9.png" /> T2'
             });
 var format_T1_10 = new ol.format.GeoJSON();
@@ -147,7 +147,7 @@ var lyr_T1_10 = new ol.layer.Vector({
                 source:jsonSource_T1_10, 
                 style: style_T1_10,
                 popuplayertitle: "T1",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/T1_10.png" /> T1'
             });
 var format_StudentCP_11 = new ol.format.GeoJSON();
