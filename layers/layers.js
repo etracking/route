@@ -25,19 +25,7 @@ var wms_layers = [];
             })
         });
 
-        var lyr_Geodata_Label_2 = new ol.layer.Tile({
-            'title': 'Geodata_Label',
-            //'type': 'base',
-            'opacity': 1.000000,
-            
-            
-            source: new ol.source.XYZ({
-    attributions: ' ',
-                url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/WGS84/{z}/{x}/{y}.png'
-            })
-        });
-
-        var lyr_OSMStandard_3 = new ol.layer.Tile({
+        var lyr_OSMStandard_2 = new ol.layer.Tile({
             'title': 'OSM Standard',
             //'type': 'base',
             'opacity': 1.000000,
@@ -46,6 +34,18 @@ var wms_layers = [];
             source: new ol.source.XYZ({
     attributions: ' &middot; <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
                 url: 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'
+            })
+        });
+
+        var lyr_ib20000_3 = new ol.layer.Tile({
+            'title': 'ib20000',
+            //'type': 'base',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+    attributions: ' ',
+                url: 'https://istw.hkirscout.org.hk/2023-06-QPNG/{z}/{x}/{y}.png'
             })
         });
 var format_UTM_4 = new ol.format.GeoJSON();
@@ -64,15 +64,15 @@ var lyr_UTM_4 = new ol.layer.Vector({
                 title: '<img src="styles/legend/UTM_4.png" /> UTM'
             });
 
-        var lyr_ib20000_5 = new ol.layer.Tile({
-            'title': 'ib20000',
+        var lyr_Geodata_Label_5 = new ol.layer.Tile({
+            'title': 'Geodata_Label',
             //'type': 'base',
             'opacity': 1.000000,
             
             
             source: new ol.source.XYZ({
     attributions: ' ',
-                url: 'https://istw.hkirscout.org.hk/2023-06-QPNG/{z}/{x}/{y}.png'
+                url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/WGS84/{z}/{x}/{y}.png'
             })
         });
 var format_SuggestedRoute_6 = new ol.format.GeoJSON();
@@ -301,8 +301,8 @@ var lyr_ForStaffOnly_20 = new ol.layer.Vector({
                 title: '<img src="styles/legend/ForStaffOnly_20.png" /> For Staff Only'
             });
 
-lyr_Geodata_Imagery_0.setVisible(false);lyr_Geodata_1.setVisible(false);lyr_Geodata_Label_2.setVisible(false);lyr_OSMStandard_3.setVisible(false);lyr_UTM_4.setVisible(false);lyr_ib20000_5.setVisible(true);lyr_SuggestedRoute_6.setVisible(false);lyr_T5_7.setVisible(true);lyr_T4_8.setVisible(true);lyr_T3_9.setVisible(true);lyr_T2_10.setVisible(true);lyr_T1_11.setVisible(true);lyr_StudentCP_12.setVisible(true);lyr_1032024_13.setVisible(false);lyr_932024_14.setVisible(false);lyr_1822024_15.setVisible(false);lyr_422024_16.setVisible(false);lyr_202142024_17.setVisible(true);lyr_131432024_18.setVisible(false);lyr_StaffReference_19.setVisible(false);lyr_ForStaffOnly_20.setVisible(true);
-var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_Geodata_Label_2,lyr_OSMStandard_3,lyr_UTM_4,lyr_ib20000_5,lyr_SuggestedRoute_6,lyr_T5_7,lyr_T4_8,lyr_T3_9,lyr_T2_10,lyr_T1_11,lyr_StudentCP_12,lyr_1032024_13,lyr_932024_14,lyr_1822024_15,lyr_422024_16,lyr_202142024_17,lyr_131432024_18,lyr_StaffReference_19,lyr_ForStaffOnly_20];
+lyr_Geodata_Imagery_0.setVisible(false);lyr_Geodata_1.setVisible(false);lyr_OSMStandard_2.setVisible(false);lyr_ib20000_3.setVisible(true);lyr_UTM_4.setVisible(false);lyr_Geodata_Label_5.setVisible(false);lyr_SuggestedRoute_6.setVisible(false);lyr_T5_7.setVisible(true);lyr_T4_8.setVisible(true);lyr_T3_9.setVisible(true);lyr_T2_10.setVisible(true);lyr_T1_11.setVisible(true);lyr_StudentCP_12.setVisible(true);lyr_1032024_13.setVisible(false);lyr_932024_14.setVisible(false);lyr_1822024_15.setVisible(false);lyr_422024_16.setVisible(false);lyr_202142024_17.setVisible(true);lyr_131432024_18.setVisible(false);lyr_StaffReference_19.setVisible(false);lyr_ForStaffOnly_20.setVisible(true);
+var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_OSMStandard_2,lyr_ib20000_3,lyr_UTM_4,lyr_Geodata_Label_5,lyr_SuggestedRoute_6,lyr_T5_7,lyr_T4_8,lyr_T3_9,lyr_T2_10,lyr_T1_11,lyr_StudentCP_12,lyr_1032024_13,lyr_932024_14,lyr_1822024_15,lyr_422024_16,lyr_202142024_17,lyr_131432024_18,lyr_StaffReference_19,lyr_ForStaffOnly_20];
 lyr_UTM_4.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'Zone': 'Zone', 'GR': 'GR', 'layer': 'layer', 'path': 'path', });
 lyr_SuggestedRoute_6.set('fieldAliases', {'fid': 'fid', });
 lyr_T5_7.set('fieldAliases', {'fid': 'fid', 'Team': 'Team', });
