@@ -8,17 +8,27 @@ var style_ForStaffOnly_20 = function(feature, resolution){
     };
     var value = ""
     var labelText = "";
-    size = 0;
+    var clusteredFeatures = feature.get("features");
     var labelFont = "19.5px \'Helvetica\', sans-serif";
     var labelFill = "#ff1b00";
     var bufferColor = "";
     var bufferWidth = 0;
-    var textAlign = "left";
-    var offsetX = 8;
-    var offsetY = 3;
-    var placement = 'point';
-    if (feature.get("Name") !== null) {
-        labelText = String(feature.get("Name"));
+    size = clusteredFeatures.length;
+    var textAlign = "center";
+    var offsetX = 0;
+    var offsetY = 0;
+    if (size == 1) {
+        textAlign = "left"
+        offsetX = 8
+        offsetY = 3
+        var feature = clusteredFeatures[0];
+        if (feature.get("Name") !== null) {
+            labelText = String(feature.get("Name"));
+        }
+        key = value + "_" + labelText
+    } else {
+        labelText = size.toString()
+        size = 2*(Math.log(size)/ Math.log(2))
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 30.0 + size,

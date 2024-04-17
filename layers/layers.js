@@ -192,7 +192,7 @@ var lyr_1032024_13 = new ol.layer.Vector({
                 source:jsonSource_1032024_13, 
                 style: style_1032024_13,
                 popuplayertitle: "地圖閱讀考驗日(集合及解散點)（10/3/2024）",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/1032024_13.png" /> 地圖閱讀考驗日(集合及解散點)（10/3/2024）'
             });
 var format_932024_14 = new ol.format.GeoJSON();
@@ -207,7 +207,7 @@ var lyr_932024_14 = new ol.layer.Vector({
                 source:jsonSource_932024_14, 
                 style: style_932024_14,
                 popuplayertitle: "夜行(蝌蚪坪-紅梅谷)（9/3/2024）",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/932024_14.png" /> 夜行(蝌蚪坪-紅梅谷)（9/3/2024）'
             });
 var format_1822024_15 = new ol.format.GeoJSON();
@@ -222,7 +222,7 @@ var lyr_1822024_15 = new ol.layer.Vector({
                 source:jsonSource_1822024_15, 
                 style: style_1822024_15,
                 popuplayertitle: "地圖閱讀實習二(寶馬山)（18/2/2024）",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/1822024_15.png" /> 地圖閱讀實習二(寶馬山)（18/2/2024）'
             });
 var format_422024_16 = new ol.format.GeoJSON();
@@ -237,7 +237,7 @@ var lyr_422024_16 = new ol.layer.Vector({
                 source:jsonSource_422024_16, 
                 style: style_422024_16,
                 popuplayertitle: "地圖閱讀實習一(掌牛山)（4/2/2024）",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/422024_16.png" /> 地圖閱讀實習一(掌牛山)（4/2/2024）'
             });
 var format_202142024_17 = new ol.format.GeoJSON();
@@ -267,7 +267,7 @@ var lyr_131432024_18 = new ol.layer.Vector({
                 source:jsonSource_131432024_18, 
                 style: style_131432024_18,
                 popuplayertitle: "旅程一(黃泥頭白沙灣黃泥頭)（13-14/3/2024）",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/131432024_18.png" /> 旅程一(黃泥頭白沙灣黃泥頭)（13-14/3/2024）'
             });
 var format_StaffReference_19 = new ol.format.GeoJSON();
@@ -282,7 +282,7 @@ var lyr_StaffReference_19 = new ol.layer.Vector({
                 source:jsonSource_StaffReference_19, 
                 style: style_StaffReference_19,
                 popuplayertitle: "Staff Reference",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/StaffReference_19.png" /> Staff Reference'
             });
 var format_ForStaffOnly_20 = new ol.format.GeoJSON();
@@ -291,17 +291,20 @@ var features_ForStaffOnly_20 = format_ForStaffOnly_20.readFeatures(json_ForStaff
 var jsonSource_ForStaffOnly_20 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_ForStaffOnly_20.addFeatures(features_ForStaffOnly_20);
+jsonSource_ForStaffOnly_20.addFeatures(features_ForStaffOnly_20);cluster_ForStaffOnly_20 = new ol.source.Cluster({
+  distance: 10,
+  source: jsonSource_ForStaffOnly_20
+});
 var lyr_ForStaffOnly_20 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_ForStaffOnly_20, 
+                source:cluster_ForStaffOnly_20, 
                 style: style_ForStaffOnly_20,
                 popuplayertitle: "For Staff Only",
                 interactive: false,
                 title: '<img src="styles/legend/ForStaffOnly_20.png" /> For Staff Only'
             });
 
-lyr_Geodata_Imagery_0.setVisible(false);lyr_Geodata_1.setVisible(false);lyr_OSMStandard_2.setVisible(false);lyr_ib20000_3.setVisible(true);lyr_UTM_4.setVisible(false);lyr_Geodata_Label_5.setVisible(false);lyr_SuggestedRoute_6.setVisible(false);lyr_T5_7.setVisible(true);lyr_T4_8.setVisible(true);lyr_T3_9.setVisible(true);lyr_T2_10.setVisible(true);lyr_T1_11.setVisible(true);lyr_StudentCP_12.setVisible(true);lyr_1032024_13.setVisible(false);lyr_932024_14.setVisible(false);lyr_1822024_15.setVisible(false);lyr_422024_16.setVisible(false);lyr_202142024_17.setVisible(true);lyr_131432024_18.setVisible(false);lyr_StaffReference_19.setVisible(false);lyr_ForStaffOnly_20.setVisible(true);
+lyr_Geodata_Imagery_0.setVisible(false);lyr_Geodata_1.setVisible(false);lyr_OSMStandard_2.setVisible(false);lyr_ib20000_3.setVisible(true);lyr_UTM_4.setVisible(false);lyr_Geodata_Label_5.setVisible(false);lyr_SuggestedRoute_6.setVisible(false);lyr_T5_7.setVisible(true);lyr_T4_8.setVisible(true);lyr_T3_9.setVisible(true);lyr_T2_10.setVisible(true);lyr_T1_11.setVisible(true);lyr_StudentCP_12.setVisible(true);lyr_1032024_13.setVisible(false);lyr_932024_14.setVisible(false);lyr_1822024_15.setVisible(false);lyr_422024_16.setVisible(false);lyr_202142024_17.setVisible(true);lyr_131432024_18.setVisible(false);lyr_StaffReference_19.setVisible(true);lyr_ForStaffOnly_20.setVisible(true);
 var layersList = [lyr_Geodata_Imagery_0,lyr_Geodata_1,lyr_OSMStandard_2,lyr_ib20000_3,lyr_UTM_4,lyr_Geodata_Label_5,lyr_SuggestedRoute_6,lyr_T5_7,lyr_T4_8,lyr_T3_9,lyr_T2_10,lyr_T1_11,lyr_StudentCP_12,lyr_1032024_13,lyr_932024_14,lyr_1822024_15,lyr_422024_16,lyr_202142024_17,lyr_131432024_18,lyr_StaffReference_19,lyr_ForStaffOnly_20];
 lyr_UTM_4.set('fieldAliases', {'fid': 'fid', 'id': 'id', 'left': 'left', 'top': 'top', 'right': 'right', 'bottom': 'bottom', 'Zone': 'Zone', 'GR': 'GR', 'layer': 'layer', 'path': 'path', });
 lyr_SuggestedRoute_6.set('fieldAliases', {'fid': 'fid', });
