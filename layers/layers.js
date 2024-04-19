@@ -99,7 +99,7 @@ var lyr_SuggestedRoute_7 = new ol.layer.Vector({
                 source:jsonSource_SuggestedRoute_7, 
                 style: style_SuggestedRoute_7,
                 popuplayertitle: "Suggested Route",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/SuggestedRoute_7.png" /> Suggested Route'
             });
 var format_T5_8 = new ol.format.GeoJSON();
